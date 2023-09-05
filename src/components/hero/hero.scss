@@ -4,8 +4,12 @@
   padding-top: 240px;
   width: 100%;
   padding-bottom: 60px;
+  position: absolute;
+  top: 0;
+  // z-index: 10000;
   .hero-info {
     padding-top: 60px;
+    color: white;
 
     p {
       padding-top: 20px;
@@ -59,4 +63,9 @@
 
 .rotateText:hover {
   transform: rotate(45deg); /* Apply the desired rotation on hover */
+}
+
+.background {
+  // z-index: -1;
+  object-fit: cover;
 }
