@@ -1,0 +1,75 @@
+@import '../../style/App.scss';
+
+.team__info {
+  max-width: 370px;
+  height: 420px;
+  margin: 0 auto;
+  margin-top: 60px;
+  position: relative;
+  border: 4px solid $light-color;
+  padding: 50px;
+  margin-bottom: 60px;
+  /* Add a scale transform for the hover effect */
+  transition: transform 0.5s ease; /* Add a smooth transition effect */
+  transform-origin: center; /* Set the transform origin to the center for uniform scaling */
+
+  h4 {
+    padding-bottom: 20px;
+  }
+  p {
+    padding-bottom: 20px;
+  }
+  p:last-child {
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  p:last-child:hover {
+    color: $main-color;
+  }
+  .team__info:hover {
+    transform: scale(2); /* Scale the box up by 5% on hover */
+  }
+  
+}
+
+.post {
+	display: flex;
+	text-decoration: none;
+	color: inherit;
+	max-width: 400px;
+	position: relative;
+	padding: 2rem;
+	box-shadow: inset 0 0 0 4px #000, inset -4px -4px 0 6px #CCC;
+	background-color: #FFF;
+	cursor: pointer; 
+	&:before {
+		position: absolute; 
+		left: 0;
+		bottom: 0;
+		content: "";
+		display: block;
+		width: 100%;
+		height: 100%;
+		background-color: #000;
+		transform-origin: 0 bottom 0;
+		transform: scaleY(0);
+		transition: .4s ease-out;
+	}
+	
+	&:hover {
+		.post-title {
+			color: #FFF;
+		}
+		&:before {
+			transform: scaleY(1);
+		}
+	}
+}
+
+.post-title {
+	position: relative;
+	font-size: 2rem;
+	font-weight: 700;
+	line-height: 1.333;
+	transition: .4s ease-out;
+}

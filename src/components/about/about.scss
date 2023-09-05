@@ -1,0 +1,96 @@
+@import '../../style/App.scss';
+
+// HoverEffectComponent.scss
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,400i,500,600,700&display=swap');
+
+#about {
+  padding: 60px 0;
+}
+
+@media screen and (max-width: 990px) {
+  #about {
+    text-align: center;
+  }
+}
+
+
+// HoverEffectComponent.scss
+
+
+.box {
+  position: relative;
+  width: 400px;
+  // padding: 10px;
+  padding-bottom: 90px;
+}
+
+.box h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  text-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-size: 3em;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  cursor: pointer;
+}
+
+.box h1:nth-child(2) {
+  // background: #f3f3f3;
+  background: $main-color;
+  color: #fff;
+  overflow: hidden;
+  z-index: 2;
+  transition: 0.5s;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0% 100%);
+}
+
+.box h1:nth-child(2):hover {
+  cursor: pointer;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.box h1:nth-child(1):hover ~ h1 {
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+
+
+.box Title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  text-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-size: 6em;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  cursor: pointer;
+}
+
+.box Title:nth-child(2) {
+  // background: #f3f3f3;
+  background: $main-color;
+  color: #fff;
+  overflow: hidden;
+  z-index: 2;
+  transition: 0.5s;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0% 100%);
+}
+
+.box Title:nth-child(2):hover {
+  cursor: pointer;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.box Title:nth-child(1):hover ~ h1 {
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}

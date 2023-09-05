@@ -1,0 +1,62 @@
+@import '../../style/App.scss';
+
+.hero {
+  padding-top: 240px;
+  width: 100%;
+  padding-bottom: 60px;
+  .hero-info {
+    padding-top: 60px;
+
+    p {
+      padding-top: 20px;
+      padding-bottom: 50px;
+    }
+  }
+
+  .hero-image {
+    max-width: 570px;
+    height: auto;
+    float: right;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .hero {
+    padding-top: 140px;
+
+    .hero-info {
+      padding-top: 0px;
+    }
+
+    .hero-image {
+      float: none;
+      margin: 0 auto;
+      margin-top: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .hero {
+    .hero-info {
+      text-align: center;
+    }
+  }
+}
+
+
+// CustomStyles.scss
+
+// .rotateText {
+//   height: 56px;
+//   width: 100%;
+//   transform: translate3d(0.404%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+//   transform-style: preserve-3d;
+//   will-change: transform;
+// }
+
+
+
+.rotateText:hover {
+  transform: rotate(45deg); /* Apply the desired rotation on hover */
+}
