@@ -12,7 +12,7 @@ import About from "./components/about/about";
 import Blog from "./components/blog/blog";
 import Contact from "./components/contact/contact";
 import Footer from "./components/footer/footer";
-import CustomCursor from './components/cursor/customcursor';
+import CustomCursor from './components/cursor/splashCursor';
 import Horizontal from './components/horizonatalscroll/horizonatalscroll';
 
 
