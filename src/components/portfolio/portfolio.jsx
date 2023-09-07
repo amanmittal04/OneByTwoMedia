@@ -7,8 +7,8 @@ import "./portfolio.scss";
 import Arrow from "../../assets/portfolio/arrow.svg";
 import Preview1 from "../../assets/portfolio/tanuki1.png";
 import Preview2 from "../../assets/portfolio/gotripbee3.png";
-import Preview3 from "../../assets/portfolio/project03/preview.png";
-import Preview4 from "../../assets/portfolio/project04/preview.png";
+import Preview3 from "../../assets/portfolio/prompteffect.jpeg";
+import Preview4 from "../../assets/portfolio/redwhales.jpeg";
 import Preview5 from "../../assets/portfolio/project05/preview.png";
 import Preview6 from "../../assets/portfolio/project06/preview.png";
 //Components
@@ -37,14 +37,14 @@ class Portfolio extends React.Component {
         {
           id: "3",
           preview: Preview3,
-          title: "Speakerphone",
-          tag: "illustrations",
+          title: "PromptEffect",
+          tag: "Artificial Intelligence",
         },
         {
           id: "4",
           preview: Preview4,
-          title: "Sneakers",
-          tag: "web",
+          title: "Red Whales",
+          tag: "Events and Planners",
         },
         {
           id: "5",

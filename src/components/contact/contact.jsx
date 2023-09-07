@@ -149,7 +149,7 @@ class Contact extends React.Component {
             </Col>
           </Row>
           <ContactInfo />
-          <ContactSocial />
+          {/* <ContactSocial /> */}
         </div>
       </div>
     );
